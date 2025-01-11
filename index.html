@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleksi Anggota</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading screen -->
+    <div id="loading" class="loading">
+        <div class="loading-content">
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <!-- Running Text -->
+    <div class="running-text">
+        <marquee behavior="scroll" direction="left">
+            Laman Penentuan Seleksi Anggota Vigara Prduction X Revolution, Masa Jabatan Generasi 9 (GEN 9) Periode @2024/2026
+        </marquee>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="card">
+            <h1>CEK DATA ANDA</h1>
+            <p>Masukkan Nomor Registrasi Anda</p>
+            <input type="text" id="regNumber" placeholder="Contoh: 10 digit">
+            <button onclick="checkStatus()">Cek Status</button>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <!-- Modal for displaying status -->
+    <div id="statusModal" class="modal">
+        <div id="modalContent" class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="statusText"></h2>
+
+            <!-- WhatsApp Link for Lulus Participants -->
+            <div id="whatsappContainer" style="display: none;">
+                <a id="whatsappLink" href="#" target="_blank" class="whatsapp-button">
+                    Kirim Pesan ke WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- External Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
